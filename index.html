@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Belgrade Waterfront | Premium Real Estate</title>
+  <meta name="description" content="Discover ultra-luxury penthouses and modern riverfront living at Belgrade Waterfront.">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div style="font-family: 'Cormorant Garamond'; font-size: 2rem; color: #fff;">Belgrade Waterfront</div>
+    <div class="loader-track"><div id="progress-bar"></div></div>
+  </div>
+
+  <!-- CANVAS BACKGROUND -->
+  <canvas id="gl-canvas"></canvas>
+  <div class="grain-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="logo">BW</a>
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#services" class="nav-link">Residences</a>
+      <a href="#contact" class="nav-link">Concierge</a>
+    </div>
+  </nav>
+
+  <!-- SCROLL CONTAINER -->
+  <div id="ui-layer">
+    <div class="stage">
+      
+      <!-- SECTION 0: HERO -->
+      <section class="page is-active" data-index="0" id="hero">
+        <div class="content-wrapper">
+          <div class="reveal-3d">
+            <h1 class="hero-title">Elevate Your <br><span class="accent-text">Lifestyle</span></h1>
+          </div>
+          <div class="reveal-3d">
+            <p class="hero-subtitle">Experience unparalleled luxury living by the Sava River. Modern architecture meets European elegance.</p>
+          </div>
+          <div class="reveal-3d">
+            <a href="#services" class="btn-primary"><span class="btn-text">Explore Residences</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 1: SERVICES -->
+      <section class="page" data-index="1" id="services">
+        <div class="content-wrapper">
+          <h2 class="section-title reveal-3d">Exclusive <span class="accent-text">Properties</span></h2>
+          <div class="card-grid">
+            <div class="card reveal-3d">
+              <h3>Penthouses</h3>
+              <p>Floor-to-ceiling windows offering panoramic views of the historic city skyline and tranquil river.</p>
+            </div>
+            <div class="card reveal-3d">
+              <h3>Riverfront Villas</h3>
+              <p>Private access to the promenade with spacious outdoor terraces and bespoke Italian interiors.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: CONTACT -->
+      <section class="page" data-index="2" id="contact">
+        <div class="content-wrapper">
+          <h2 class="section-title reveal-3d">Bespoke <span class="accent-text">Concierge</span></h2>
+          <div class="reveal-3d" style="max-width: 600px;">
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Our five-star residential concierge is at your service 24/7, ensuring every detail of your luxury lifestyle is perfectly orchestrated.</p>
+            <a href="#" class="btn-primary"><span class="btn-text">Schedule a Private Viewing</span></a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
