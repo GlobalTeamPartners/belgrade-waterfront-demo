@@ -2,7 +2,7 @@
 const TOTAL_FRAMES = 390; // Will be replaced by actual count once videos are generated
 const PAGE_COUNT = 3;
 const LERP = 0.02;
-const CONCURRENCY = 48;
+const CONCURRENCY = 24;
 
 const isMobile = /Mobi|Android|iPhone/i.test(navigator.userAgent) || innerWidth < 768;
 const FRAME_DIR = isMobile ? 'frames-mobile' : 'frames-webp';
@@ -50,7 +50,7 @@ async function loadAll() {
             isReady = true;
             startAnim();
           }
-          if (loadedCount === TOTAL_FRAMES) {
+          if (loadedCount === Math.min(20, TOTAL_FRAMES)) {
             const loader = document.getElementById('loader');
             if (loader) {
               loader.style.transition = 'opacity 0.8s';
